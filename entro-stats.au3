@@ -1398,7 +1398,7 @@ Func GUI()
 	  $x = $x + $w + 10
 	  $w = 50
 	  Assign("gui_stgs_wpn" & $tab & "_w" & $cnt & "_decay_inp", GUICtrlCreateInput("", $x, $y-2, 50, $gui_inp_height, $GUI_SS_DEFAULT_INPUT), 2)
-	  _RegEx_RestrictControl_add (Eval("gui_stgs_wpn" & $tab & "_w" & $cnt & "_decay_inp"), "^[0-9]{0,1}[\.]{0,1}[0-9]{0,3}$")
+	  _RegEx_RestrictControl_add (Eval("gui_stgs_wpn" & $tab & "_w" & $cnt & "_decay_inp"), "^[0-9]{0,2}[\.]{0,1}[0-9]{0,3}$")
 	  $x = $x + $w + 10
 	  $w = 70
 	  Assign("gui_stgs_wpn" & $tab & "_w" & $cnt & "_ammo_lbl", GUICtrlCreateLabel("Ammo in PEC:", $x, $y, $w, $gui_lbl_height, 0), 2)
