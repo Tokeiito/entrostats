@@ -1,7 +1,16 @@
+; *** Start added by AutoIt3Wrapper ***
+#include <StringConstants.au3>
+; *** End added by AutoIt3Wrapper ***
+#NoTrayIcon
+#Region ;**** Directives created by AutoIt3Wrapper_GUI ****
+#AutoIt3Wrapper_Compile_Both=y
+#AutoIt3Wrapper_UseX64=y
+#AutoIt3Wrapper_Add_Constants=n
+#AutoIt3Wrapper_Run_AU3Check=n
+#EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 ; branched from Hunter Stats Open Source
 #pragma compile(Out, entro-stats.exe)
 #pragma compile(Icon, Icon\entro-stats.ico)
-#NoTrayIcon
 
 #include <GuiConstantsEx.au3>
 #include <File.au3>
@@ -20,10 +29,10 @@
 #include <StaticConstants.au3>
 #include <TabConstants.au3>
 
-#include <HotKey_21b.au3>
-#include <HotKeyInput.au3>
-#include <vkConstants.au3>
-#include <RestrictControlRegExp.au3>
+#include <lib/HotKey_21b.au3>
+#include <lib/HotKeyInput.au3>
+#include <lib/vkConstants.au3>
+#include <lib/RestrictControlRegExp.au3>
 
 Opt("GUICloseOnESC", 0)
 Opt("GUIOnEventMode", 1)
